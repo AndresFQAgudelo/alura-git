@@ -1,0 +1,28 @@
+<canvas width="600" height="400s"></canvas>
+<script>
+
+    var screen = document.querySelector("canvas");
+    var pencil = screen.getContext("2d");
+
+    function drawRect(x, y, color){
+        pencil.fillStyle = color; //prpiedad
+        pencil.fillRect(x,y, 50, 50); //funcion
+        pencil.strokeStyle = "black";
+        pencil.strokeRect(x,y,50,50);
+
+    }
+
+
+
+    for (i = 50; i < 600; i+=50){
+        drawRect(i, 50, "green");
+        drawRect(i, 100, "yellow");
+        drawRect(i, 150, "red");
+
+    }
+    
+    
+
+
+
+</script>

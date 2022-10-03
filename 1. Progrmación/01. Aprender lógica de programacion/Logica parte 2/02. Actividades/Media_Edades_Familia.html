@@ -1,0 +1,33 @@
+<meta charset="UTF-8">
+<h1>EDADES</h1>
+
+<script>
+    function saltarLinea() {
+
+        document.write("<br>");	
+        document.write("<br>");	
+        document.write("<br>");	
+
+    }  ;
+
+    function imprimir(frase) {
+
+        document.write(frase);
+        saltarLinea();
+
+    };
+    
+    var familiares = parseInt(prompt("Numero de miembros"));
+    var total = 0;
+
+    for (let index = 0; index < familiares; index++) {
+        var edad = parseInt(prompt("Edad"));
+
+        total = total + edad;
+        
+    };
+
+    imprimir("Promedio de edades es " + Math.round(total/familiares));
+    
+
+</script>
